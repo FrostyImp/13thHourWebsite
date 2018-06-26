@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+body, html{
+	margin:0;
+	height: 100%;
+	}
+
+#grad { 
+	height: 700px;
+	background: #000; /*Browsers w/o gradient support*/
+	background: linear-gradient(#F00, #000);
+}
+
+.icon-bar { 
+	width: 100%;
+	background-color: #333;
+	overflow:auto;
+}
+
+.icon-bar a {
+	float:left;
+	width:20%;
+	text-align: center;
+	padding: 12px 0;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.icon-bar a:hover {
+	background-color: #000;
+}
+
+.active {
+	background-color: #F63 !important;
+}
+
+.parallaxScroll {
+	background-image: url('13HourGamingTwitterHeader.png');
+	height:100%;
+	width:100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallaxScroll2 {
+	background-image: url('BuyOurMerchPls.png');
+	height:100%;
+	width:100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallaxScrollCSGO {
+	background-image: url('csgo-logo.png');
+	height:80%;
+	width:100%;
+	background-color:#000;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #000;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	transition: all 0.3s ease;
+}
+
+.fa-twitter {
+  background: #000;
+  color: white;
+}
+
+.fa-facebook {
+  background: #000;
+  color: white;
+}
+
+/* --------------------- CS:GO ROSTER INFORMATION --------------------- */
+
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+/* --------------------- CS:GO ROSTER INFORMATION END --------------------- */
+
