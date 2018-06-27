@@ -192,3 +192,11 @@ a {
 @keyframes come-in {
   to { transform: translateY(0); }
 }
+/*--------------------- Center Class ---------------------------*/
+.center { 
+	margin-left: auto;
+	margin-right:auto;
+	display:block; 
+}
+
+/*------------------------------*/
