@@ -8,7 +8,7 @@ body, html{
 	}
 
 #grad { 
-	height: 700px;
+	height: 900px;
 	background: #000; /*Browsers w/o gradient support*/
 	background: linear-gradient(#F00, #000);
 }
@@ -36,13 +36,14 @@ body, html{
 }
 
 .active {
-	background-color: #FF8C00 !important;
+	background: linear-gradient(#ff6600, #ff0000); !important;
 }
 
 .parallaxScroll {
 	background-image: url('13HourGamingTwitterHeader.png');
 	height:100%;
 	width:100%;
+	background-color:#000;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -53,6 +54,7 @@ body, html{
 	background-image: url('BuyOurMerchPls.png');
 	height:100%;
 	width:100%;
+	background-color:#000;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -60,6 +62,17 @@ body, html{
 }
 .parallaxScrollCSGO {
 	background-image: url('csgomaps.jpg');
+	height:45%;
+	width:100%;
+	background-color:#000;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallaxScrollCOD {
+	background-image: url('Codbackground.jpg');
 	height:45%;
 	width:100%;
 	background-color:#000;
@@ -141,6 +154,14 @@ body, html{
   color: grey;
 }
 
+.imageMods {
+	box-shadow: 5px 5px 10px black;
+	display: block;
+	margin-left:auto; 
+	margin-right: auto; 
+	width:75%;
+}
+
 /* --------------------- ROSTER INFORMATION END --------------------- */
 
 /* --------------------- VIP CARDS ----------------------------*/
@@ -157,4 +178,16 @@ a {
     text-decoration: none;
     font-size: 22px;
     color: black;
+}
+/*----------------------- ROSTER STAGGER LOAD ----------------------*/
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 1s; /* So they look staggered */
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
 }
