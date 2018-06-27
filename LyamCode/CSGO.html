@@ -23,10 +23,10 @@
 
 <div id="grad" style="font-family:'Arial Black', Gadget, sans-serif">
 	<div class="row">
-    <h1 style="text-align:center; padding-bottom:5px; color:white;text-shadow: 2px 2px #000;">Active CS:GO Roster</h1>
-    	<div class="column">
+    <h1 style="text-align:center; padding-bottom:5px; color:white;text-shadow: 2px 2px 10px #000;">Active CS:GO Roster</h1>
+    	<div class="column come-in">
         	<div class="card">
-            	<img src="13HourGamingProfilePicture2.png" style="width:100%" />
+            	<img class="imageShadow" src="13HourGamingProfilePicture2.png" style="width:100%" />
                 <div class="container" style="color:white">
                 	<h3>Lyam "Frosty" Milbury</h3>
                 	<p class="title">Entry</p>
@@ -35,9 +35,9 @@
                 </div>
             </div>
         </div>
-        <div class="column">
+        <div class="column come-in">
         	<div class="card">
-            	<img src="13HourGamingProfilePicture2.png" style="width:100%" />
+            	<img class="imageShadow" src="13HourGamingProfilePicture2.png" style="width:100%" />
                 <div class="container" style="color:white">
                 	<h3>Ryan "Mimic" Pellet</h3>
                 	<p class="title">Support</p>
@@ -46,9 +46,9 @@
                 </div>
             </div>
         </div>
-        <div class="column">
+        <div class="column come-in">
         	<div class="card">
-            	<img src="13HourGamingProfilePicture2.png" style="width:100%" />
+            	<img class="imageShadow" src="13HourGamingProfilePicture2.png" style="width:100%" />
                 <div class="container" style="color:white">
                 	<h3>Dylan "FeaR" Macdonald</h3>
                 	<p class="title">In game leader</p>
@@ -57,9 +57,9 @@
                 </div>
             </div>
         </div>
-        <div class="column">
+        <div class="column come-in">
         	<div class="card">
-            	<img src="13HourGamingProfilePicture2.png" style="width:100%" />
+            	<img class="imageShadow" src="13HourGamingProfilePicture2.png" style="width:100%" />
                 <div class="container" style="color:white">
                 	<h3>Gabriel "Gibby" Lambert</h3>
                 	<p class="title">Dedicated weeb</p>
@@ -68,9 +68,9 @@
                 </div>
             </div>
         </div>
-        <div class="column">
+        <div class="column come-in">
         	<div class="card" style="color:white">
-            	<img src="13HourGamingProfilePicture2.png" style="width:100%" />
+            	<img class="imageShadow" src="13HourGamingProfilePicture2.png" style="width:100%" />
                 <div class="container">
                 	<h3>Kevin "Muffinatorz" A-D.</h3>
                 	<p class="title">AWPer</p>
@@ -82,7 +82,7 @@
     </div>
     <div style="color: white; text-align:center; width: 40%; margin:auto;">
     	<h2>List of achievements:</h2>
-        	<ul style="font-size:24px">
+        	<ul style="font-size:24px;">
             	<li>Battle Royale 11 LAN: 2nd place (250$)</li>
             </ul>
     </div>
@@ -112,6 +112,41 @@
         </div>
     </div>
 </div>
+
+<script>
+$(window).scroll(function(event) {
+  
+  $(".module").each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+
+var win = $(window);
+var allMods = $(".module");
+
+// Already visible modules
+allMods.each(function(i, el) {
+  var el = $(el);
+  if (el.visible(true)) {
+    el.addClass("already-visible"); 
+  } 
+});
+
+win.scroll(function(event) {
+  
+  allMods.each(function(i, el) {
+    var el = $(el);
+    if (el.visible(true)) {
+      el.addClass("come-in"); 
+    } 
+  });
+  
+});
+</script>
 
 </body>
 </html>
