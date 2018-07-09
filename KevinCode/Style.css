@@ -28,6 +28,7 @@ iframe {
 
 .well {
     background: rgb(64,64,64) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) !important;
 }
 
 .midcontent { 
@@ -111,7 +112,7 @@ iframe {
 }
 
 .footer {
-	height: 100px;
+	height: 125px;
 	width: 100%;
 	background: #000;
 }
@@ -119,7 +120,7 @@ iframe {
 .footercell
 {
   height:100px;
-  width:16.6%;
+  width:14.2%;
   padding: 10px;
   float: left;
   text-align: center;
@@ -206,6 +207,8 @@ iframe {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 300px;
     margin: auto;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
     text-align: center;
     font-family: arial;
 }
