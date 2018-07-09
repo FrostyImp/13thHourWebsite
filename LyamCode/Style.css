@@ -8,7 +8,7 @@ body, html{
 	}
 
 #grad { 
-	height: 850px;
+	height: 859px;
 	background: #000; /*Browsers w/o gradient support*/
 	background: linear-gradient(#F00, #000);
 }
