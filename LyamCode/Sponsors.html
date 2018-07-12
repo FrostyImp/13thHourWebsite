@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>13th Hour Gaming Sponsors</title>
 	<link href="Style.css" rel="stylesheet" type="text/css" />
+    <script src="Javascript.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='https://fonts.googleapis.com/css?family=Patua One' rel='stylesheet'>
@@ -13,12 +14,26 @@
 
 <body>
 
-<div class="icon-bar" style="font-family:'Patua One'">
-	<a href="13thWeb.html">13TH HOUR</a>
-    <a href="COD.html">CALL OF DUTY</a> 
-  	<a href="CSGO.html">CS:GO</a>
-    <a href="AboutUs.html">ABOUT US</a>
-    <a class="active">SPONSORS</a>
+<div id="hideDrop">
+	<div class="dropdown" style="font-family: 'Patua One'">
+     	<button onclick="dropDown()" class="dropbtn">SPONSORS</button>
+        <div id="mobileDropdown" class="dropdown-content">
+            <a href="13thWeb.html">13TH HOUR</a>
+            <a href="COD.html">CALL OF DUTY</a>
+            <a href="CSGO.html">CS:GO</a>
+            <a href="AboutUs.html">ABOUT US</a>
+        </div>
+	</div>
+</div>
+
+<div id="hideNav">
+    <div class="icon-bar" style="font-family:'Patua One'">
+        <a href="13thWeb.html">13TH HOUR</a>
+        <a href="COD.html">CALL OF DUTY</a> 
+        <a href="CSGO.html">CS:GO</a>
+        <a href="AboutUs.html">ABOUT US</a>
+        <a class="active">SPONSORS</a>
+    </div>
 </div>
 
 <h1 style="text-align:center; margin-top:30px; margin-bottom:30px;">List of Sponsors</h1>
